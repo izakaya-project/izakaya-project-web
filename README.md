@@ -2,7 +2,7 @@
 ===============
 
 <p align="center">
-  <img src="http://raw.github.team-lab.local/izakaya-project/izakaya-project-develop/master/image.png">
+  <img src="https://raw.githubusercontent.com/izakaya-project/izakaya-project-web/master/image.png">
 </p>
 
 ## Overview
@@ -30,7 +30,7 @@ set up the necessary files.
     npm i
 
 and
-    
+
     bower i
 
 and
@@ -48,15 +48,15 @@ if you want to release build.
 run a express
 
     npm run start
-    
+
 or
 
     DEBUG=genius-kenkenpa-backend ./bin/www
-    
+
 stop a express
-    
+
     npm run stop
-    
+
 Please enter the following URL to launch the browser.
 
     http://localhost:3000/
@@ -68,13 +68,13 @@ heroku buildpacks setup
 Since heroku can not be confused with Ruby and Node.js, it was to quit to compile during postinstall.
 
     "postinstall": "bower install && npm run product"
-    
+
 ## Port 3000 is unavailable error.
 
 Port 3000 is unavailable.
 
     lsof -i -P | grep 3000
-    
+
     kill -9 3000
 
 ## Directory Structure
