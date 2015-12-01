@@ -1,0 +1,946 @@
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: sans-serif; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+ * Removes default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+}
+
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*
+ * Sets consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/*
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/*
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* line 41, style.scss */
+body {
+  overflow: hidden;
+}
+
+/* line 45, style.scss */
+.okamisan--body {
+  background-color: #fdffb5;
+  background-image: url("../images/okamisan/background-image.png");
+  background-repeat: repeat;
+}
+
+/* line 51, style.scss */
+.ojisan--body {
+  background-color: black;
+  background-image: url("../images/ojisan/background-image.png");
+  background-repeat: repeat;
+}
+
+/* line 64, style.scss */
+.okamisan--header--title {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  padding: 0;
+  z-index: 101;
+}
+
+/* line 72, style.scss */
+.okamisan--header--gacha-link {
+  position: absolute;
+  top: 5px;
+  right: 40px;
+  padding: 0;
+  z-index: 101;
+}
+
+/* line 83, style.scss */
+.okamisan--footer--sns {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 0;
+  margin: 0;
+  z-index: 101;
+}
+
+/* line 92, style.scss */
+.okamisan--background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1440px;
+  height: 990px;
+  z-index: 2;
+}
+
+/* line 97, style.scss */
+.okamisan--okamisan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1440px;
+  height: 990px;
+  z-index: 2;
+}
+
+/* line 102, style.scss */
+.okamisan--okamisan--character {
+  position: absolute;
+  top: 340px;
+  left: 700px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  z-index: 2;
+}
+
+/* line 110, style.scss */
+.okamisan--counter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1440px;
+  height: 990px;
+  z-index: 2;
+}
+
+/* line 115, style.scss */
+.okamisan--items {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1440px;
+  height: 990px;
+  z-index: 2;
+}
+
+/* line 120, style.scss */
+.okamisan--neco {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1440px;
+  height: 990px;
+  z-index: 2;
+}
+
+/* line 125, style.scss */
+.okamisan--neco--neco {
+  position: absolute;
+  top: 700px;
+  right: 60px;
+  z-index: 2;
+}
+
+/* line 132, style.scss */
+.okamisan--neco--shadow {
+  position: absolute;
+  top: 750px;
+  right: 60px;
+  z-index: 2;
+}
+
+/* line 144, style.scss */
+.ojisan--background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 375px;
+  height: 667px;
+  z-index: 2;
+}
+
+/* line 149, style.scss */
+.ojisan--canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 375px;
+  height: 667px;
+  z-index: 2;
+}
+
+/* line 154, style.scss */
+.ojisan--ojisan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 375px;
+  height: 667px;
+  z-index: 2;
+}
+
+/* line 159, style.scss */
+.ojisan--ojisan--character {
+  position: absolute;
+  top: 180px;
+  left: 50%;
+  margin-left: -100px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  z-index: 2;
+}
+
+/* line 168, style.scss */
+.ojisan--counter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 375px;
+  height: 667px;
+  z-index: 2;
+}
+
+/* line 173, style.scss */
+.ojisan--message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 375px;
+  height: 667px;
+  z-index: 2;
+}
+
+/* line 178, style.scss */
+.ojisan--message--title {
+  z-index: 2;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin-left: -120px;
+}
+
+/* line 186, style.scss */
+.ojisan--ui {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 375px;
+  height: 667px;
+  z-index: 2;
+}
+
+/* line 191, style.scss */
+.ojisan--ui--button {
+  z-index: 2;
+  position: absolute;
+  bottom: 50px;
+  list-style: none;
+  padding: 0;
+  left: 50%;
+  margin-left: -163px;
+  display: none;
+}
+
+/* line 202, style.scss */
+.ojisan--ui--button--li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 208, style.scss */
+.ojisan--ui--button__gacha {
+  z-index: 2;
+  background-image: url("../images/ojisan/btn.png");
+  background-size: 158px 68px;
+  width: 158px;
+  height: 68px;
+  border: none;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+/* line 219, style.scss */
+.ojisan--ui--button__koban {
+  z-index: 2;
+  background-image: url("../images/ojisan/koban.png");
+  background-size: 168px 156px;
+  width: 168px;
+  height: 156px;
+  border: none;
+  background-color: transparent;
+}
+
+/* line 229, style.scss */
+.ojisan--ui--button__no {
+  z-index: 2;
+  background-image: url("../images/ojisan/btn2.png");
+  background-size: 135px 100px;
+  width: 135px;
+  height: 100px;
+  border: none;
+  background-color: transparent;
+}
+
+/* line 240, style.scss */
+.gacha--wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 375px;
+  height: 667px;
+  z-index: 11;
+}
+
+/* line 245, style.scss */
+.gacha--background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 375px;
+  height: 667px;
+  z-index: 11;
+}
+
+/* line 250, style.scss */
+.gacha--canvas--wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 375px;
+  height: 667px;
+  z-index: 11;
+}
+
+/* line 255, style.scss */
+.gacha--canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 375px;
+  height: 667px;
+  z-index: 11;
+}
+
+/* line 260, style.scss */
+.gacha--object {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 375px;
+  height: 667px;
+  z-index: 11;
+}
+
+/* line 268, style.scss */
+.gacha--object--star2--stars {
+  position: absolute;
+  z-index: 11;
+  top: 40px;
+  list-style: none;
+  padding: 0;
+  display: table;
+  width: 375px;
+}
+
+/* line 278, style.scss */
+.gacha--object--star2--stars-li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 284, style.scss */
+.gacha--object--star2--item {
+  position: absolute;
+  z-index: 11;
+  left: 50%;
+  bottom: 150px;
+  list-style: none;
+  padding: 0;
+  margin-left: -300px;
+  display: table;
+  width: 375px;
+}
+
+/* line 296, style.scss */
+.gacha--object--star2--item-li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 302, style.scss */
+.gacha--object--star2--message {
+  position: absolute;
+  z-index: 11;
+  bottom: 170px;
+  list-style: none;
+  padding: 0;
+  display: table;
+  width: 375px;
+}
+
+/* line 312, style.scss */
+.gacha--object--star2--message-li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 318, style.scss */
+.gacha--object--star2--get {
+  position: absolute;
+  z-index: 11;
+  bottom: 40px;
+  list-style: none;
+  padding: 0;
+  display: table;
+  width: 375px;
+}
+
+/* line 328, style.scss */
+.gacha--object--star2--get-li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 337, style.scss */
+.gacha--object--star3--stars {
+  position: absolute;
+  z-index: 11;
+  top: 40px;
+  list-style: none;
+  padding: 0;
+  display: table;
+  width: 375px;
+}
+
+/* line 347, style.scss */
+.gacha--object--star3--stars-li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 353, style.scss */
+.gacha--object--star3--item {
+  position: absolute;
+  z-index: 11;
+  left: 50%;
+  bottom: 150px;
+  list-style: none;
+  padding: 0;
+  margin-left: -300px;
+  display: table;
+  width: 375px;
+}
+
+/* line 365, style.scss */
+.gacha--object--star3--item-li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 371, style.scss */
+.gacha--object--star3--message {
+  position: absolute;
+  z-index: 11;
+  bottom: 170px;
+  list-style: none;
+  padding: 0;
+  display: table;
+  width: 375px;
+}
+
+/* line 381, style.scss */
+.gacha--object--star3--message-li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 387, style.scss */
+.gacha--object--star3--get {
+  position: absolute;
+  z-index: 11;
+  bottom: 40px;
+  list-style: none;
+  padding: 0;
+  display: table;
+  width: 375px;
+}
+
+/* line 397, style.scss */
+.gacha--object--star3--get-li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 406, style.scss */
+.gacha--object--star4--stars {
+  position: absolute;
+  z-index: 11;
+  top: 40px;
+  list-style: none;
+  padding: 0;
+  display: table;
+  width: 375px;
+}
+
+/* line 416, style.scss */
+.gacha--object--star4--stars-li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 422, style.scss */
+.gacha--object--star4--item {
+  position: absolute;
+  z-index: 11;
+  left: 50%;
+  bottom: 150px;
+  list-style: none;
+  padding: 0;
+  margin-left: -300px;
+  display: table;
+  width: 375px;
+}
+
+/* line 434, style.scss */
+.gacha--object--star4--item-li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 440, style.scss */
+.gacha--object--star4--message {
+  position: absolute;
+  z-index: 11;
+  bottom: 170px;
+  list-style: none;
+  padding: 0;
+  display: table;
+  width: 375px;
+}
+
+/* line 450, style.scss */
+.gacha--object--star4--message-li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 456, style.scss */
+.gacha--object--star4--get {
+  position: absolute;
+  z-index: 11;
+  bottom: 40px;
+  list-style: none;
+  padding: 0;
+  display: table;
+  width: 375px;
+}
+
+/* line 466, style.scss */
+.gacha--object--star4--get-li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 472, style.scss */
+.loading--wrapper {
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #FFF;
+  background: white;
+}
+
+/* line 483, style.scss */
+.loading--logo {
+  position: absolute;
+  z-index: 101;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 240px;
+  height: 165px;
+  margin: auto;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+

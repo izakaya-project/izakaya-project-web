@@ -1,0 +1,494 @@
+@charset "UTF-8";
+
+@import "compass";
+@import "compass/css3";
+
+// 変数
+// サポートベンダープレフィックス
+$animation-support: -moz, -webkit, -o, -ms, not -khtml;
+$base_okamisan_zIndex: 1;
+$base_ojisan_zIndex: 1;
+$base_gacha_zIndex: 10;
+$base_loading_zIndex: 100;
+
+// 定数
+$base_okamisan_width: 1440px;
+$base_okamisan_height: 990px;
+$base_ojisan_width: 375px;
+$base_ojisan_height: 667px;
+$base_gacha_width: 375px;
+$base_gacha_height: 667px;
+
+// mixin
+@mixin okamisan-object-setup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: $base_okamisan_width;
+  height: $base_okamisan_height;
+}
+
+@mixin ojisan-object-setup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: $base_ojisan_width;
+  height: $base_ojisan_height;
+}
+
+body {
+  overflow:hidden;
+}
+
+.okamisan--body {
+  background-color: rgba(253, 255, 181, 1);
+  background-image: url("../images/okamisan/background-image.png");
+  background-repeat: repeat;
+}
+
+.ojisan--body {
+  background-color: black;
+  background-image: url("../images/ojisan/background-image.png");
+  background-repeat: repeat;
+}
+
+// おかみさん
+.okamisan--wrapper {
+}
+
+.okamisan--header {
+}
+
+.okamisan--header--title {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  padding: 0;
+  z-index: $base_okamisan_zIndex + 100;
+}
+
+.okamisan--header--gacha-link {
+  position: absolute;
+  top: 5px;
+  right: 40px;
+  padding: 0;
+  z-index: $base_okamisan_zIndex + 100;
+}
+
+.okamisan--footer {
+}
+
+.okamisan--footer--sns {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 0;
+  margin: 0;
+  z-index: $base_okamisan_zIndex + 100;
+}
+
+.okamisan--background {
+  @include okamisan-object-setup;
+  z-index: $base_okamisan_zIndex + 1;
+}
+
+.okamisan--okamisan {
+  @include okamisan-object-setup;
+  z-index: $base_okamisan_zIndex + 1;
+}
+
+.okamisan--okamisan--character {
+  position: absolute;
+  top: 340px;
+  left: 700px;
+  @include opacity(0);
+  z-index: $base_okamisan_zIndex + 1;
+}
+
+.okamisan--counter {
+  @include okamisan-object-setup;
+  z-index: $base_okamisan_zIndex + 1;
+}
+
+.okamisan--items {
+  @include okamisan-object-setup;
+  z-index: $base_okamisan_zIndex + 1;
+}
+
+.okamisan--neco {
+  @include okamisan-object-setup;
+  z-index: $base_okamisan_zIndex + 1;
+}
+
+.okamisan--neco--neco {
+  position: absolute;
+  top: 700px;
+  right: 60px;
+  z-index: $base_okamisan_zIndex + 1;
+}
+
+.okamisan--neco--shadow {
+  position: absolute;
+  top: 750px;
+  right: 60px;
+  z-index: $base_okamisan_zIndex + 1;
+}
+
+// おじさん
+.ojisan--wrapper {
+
+}
+
+.ojisan--background {
+  @include ojisan-object-setup;
+  z-index: $base_ojisan_zIndex + 1;
+}
+
+.ojisan--canvas {
+  @include ojisan-object-setup;
+  z-index: $base_ojisan_zIndex + 1;
+}
+
+.ojisan--ojisan {
+  @include ojisan-object-setup;
+  z-index: $base_ojisan_zIndex + 1;
+}
+
+.ojisan--ojisan--character {
+  position: absolute;
+  top: 180px;
+  left: 50%;
+  margin-left: -100px;
+  @include opacity(0);
+  z-index: $base_ojisan_zIndex + 1;
+}
+
+.ojisan--counter {
+  @include ojisan-object-setup;
+  z-index: $base_ojisan_zIndex + 1;
+}
+
+.ojisan--message {
+  @include ojisan-object-setup;
+  z-index: $base_ojisan_zIndex + 1;
+}
+
+.ojisan--message--title {
+  z-index: $base_ojisan_zIndex + 1;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin-left: -120px;
+}
+
+.ojisan--ui {
+  @include ojisan-object-setup;
+  z-index: $base_ojisan_zIndex + 1;
+}
+
+.ojisan--ui--button {
+  z-index: $base_ojisan_zIndex + 1;
+  position: absolute;
+  bottom: 50px;
+  list-style: none;
+  padding: 0;
+  left: 50%;
+  margin-left: -163px;
+  display: none;
+}
+
+.ojisan--ui--button--li {
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.ojisan--ui--button__gacha {
+  z-index: $base_ojisan_zIndex + 1;
+  background-image: url("../images/ojisan/btn.png");
+  background-size: 158px 68px;
+  width: 158px;
+  height: 68px;
+  border: none;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+.ojisan--ui--button__koban {
+  z-index: $base_ojisan_zIndex + 1;
+  background-image: url("../images/ojisan/koban.png");
+  background-size: 168px 156px;
+  width: 168px;
+  height: 156px;
+  border: none;
+  background-color: transparent;
+}
+
+.ojisan--ui--button__no {
+  z-index: $base_ojisan_zIndex + 1;
+  background-image: url("../images/ojisan/btn2.png");
+  background-size: 135px 100px;
+  width: 135px;
+  height: 100px;
+  border: none;
+  background-color: transparent;
+}
+
+// ガチャ
+.gacha--wrapper {
+  @include ojisan-object-setup;
+  z-index: $base_gacha_zIndex + 1;
+}
+
+.gacha--background {
+  @include ojisan-object-setup;
+  z-index: $base_gacha_zIndex + 1;
+}
+
+.gacha--canvas--wrapper {
+  @include ojisan-object-setup;
+  z-index: $base_gacha_zIndex + 1;
+}
+
+.gacha--canvas {
+  @include ojisan-object-setup;
+  z-index: $base_gacha_zIndex + 1;
+}
+
+.gacha--object {
+  @include ojisan-object-setup;
+  z-index: $base_gacha_zIndex + 1;
+}
+
+.gacha--object--star2 {
+}
+
+.gacha--object--star2--stars {
+  position: absolute;
+  z-index: $base_gacha_zIndex + 1;
+  top: 40px;
+  list-style: none;
+  padding: 0;
+  display:table;
+  width: $base_gacha_width;
+}
+
+.gacha--object--star2--stars-li {
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.gacha--object--star2--item {
+  position: absolute;
+  z-index: $base_gacha_zIndex + 1;
+  left: 50%;
+  bottom: 150px;
+  list-style: none;
+  padding: 0;
+  margin-left: -300px;
+  display:table;
+  width: $base_gacha_width;
+}
+
+.gacha--object--star2--item-li {
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.gacha--object--star2--message {
+  position: absolute;
+  z-index: $base_gacha_zIndex + 1;
+  bottom: 170px;
+  list-style: none;
+  padding: 0;
+  display:table;
+  width: $base_gacha_width;
+}
+
+.gacha--object--star2--message-li {
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.gacha--object--star2--get {
+  position: absolute;
+  z-index: $base_gacha_zIndex + 1;
+  bottom: 40px;
+  list-style: none;
+  padding: 0;
+  display:table;
+  width: $base_gacha_width;
+}
+
+.gacha--object--star2--get-li {
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.gacha--object--star3 {
+}
+
+.gacha--object--star3--stars {
+  position: absolute;
+  z-index: $base_gacha_zIndex + 1;
+  top: 40px;
+  list-style: none;
+  padding: 0;
+  display:table;
+  width: $base_gacha_width;
+}
+
+.gacha--object--star3--stars-li {
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.gacha--object--star3--item {
+  position: absolute;
+  z-index: $base_gacha_zIndex + 1;
+  left: 50%;
+  bottom: 150px;
+  list-style: none;
+  padding: 0;
+  margin-left: -300px;
+  display:table;
+  width: $base_gacha_width;
+}
+
+.gacha--object--star3--item-li {
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.gacha--object--star3--message {
+  position: absolute;
+  z-index: $base_gacha_zIndex + 1;
+  bottom: 170px;
+  list-style: none;
+  padding: 0;
+  display:table;
+  width: $base_gacha_width;
+}
+
+.gacha--object--star3--message-li {
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.gacha--object--star3--get {
+  position: absolute;
+  z-index: $base_gacha_zIndex + 1;
+  bottom: 40px;
+  list-style: none;
+  padding: 0;
+  display:table;
+  width: $base_gacha_width;
+}
+
+.gacha--object--star3--get-li {
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.gacha--object--star4 {
+}
+
+.gacha--object--star4--stars {
+  position: absolute;
+  z-index: $base_gacha_zIndex + 1;
+  top: 40px;
+  list-style: none;
+  padding: 0;
+  display:table;
+  width: $base_gacha_width;
+}
+
+.gacha--object--star4--stars-li {
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.gacha--object--star4--item {
+  position: absolute;
+  z-index: $base_gacha_zIndex + 1;
+  left: 50%;
+  bottom: 150px;
+  list-style: none;
+  padding: 0;
+  margin-left: -300px;
+  display:table;
+  width: $base_gacha_width;
+}
+
+.gacha--object--star4--item-li {
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.gacha--object--star4--message {
+  position: absolute;
+  z-index: $base_gacha_zIndex + 1;
+  bottom: 170px;
+  list-style: none;
+  padding: 0;
+  display:table;
+  width: $base_gacha_width;
+}
+
+.gacha--object--star4--message-li {
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.gacha--object--star4--get {
+  position: absolute;
+  z-index: $base_gacha_zIndex + 1;
+  bottom: 40px;
+  list-style: none;
+  padding: 0;
+  display:table;
+  width: $base_gacha_width;
+}
+
+.gacha--object--star4--get-li {
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.loading--wrapper {
+  position: fixed;
+  z-index: $base_loading_zIndex + 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #FFF;
+  background: rgba(255,255,255,1.0);
+}
+
+.loading--logo {
+  position: absolute;
+  z-index: $base_loading_zIndex + 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 240px;
+  height: 165px;
+  margin: auto;
+  @include opacity(0);
+}
