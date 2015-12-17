@@ -45,18 +45,6 @@ if you want to release build.
 
     npm run product
 
-run a express
-
-    npm run start
-
-or
-
-    DEBUG=genius-kenkenpa-backend ./bin/www
-
-stop a express
-
-    npm run stop
-
 Please enter the following URL to launch the browser.
 
     http://localhost:3000/
@@ -99,10 +87,6 @@ Port 3000 is unavailable.
 command to create the express module.
 
 [express-generator](http://expressjs.com/starter/generator.html)
-
-Command that was run at the beginning most.
-
-    ./node_modules/.bin/express ../genius-kenkenpa-backend
 
 ## Postman
 
